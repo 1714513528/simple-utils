@@ -92,7 +92,7 @@ public class TruthTableUtil {
 		}
 		
 		for(boolean curValue0:possible) {
-			mutablesItems[3-(index-1)]=curValue0;
+			mutablesItems[mutablesItems.length-index]=curValue0;
 			recursive(index-1);
 		}
 	}
